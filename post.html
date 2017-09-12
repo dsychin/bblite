@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BB Lite | {title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {{
+            margin: 0;
+        }}
+
+        body .main {{
+            margin: 10px auto;
+            max-width: 650px;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #444;
+            padding: 0 10px
+        }}
+        
+        h1,
+        h2,
+        h3 {{
+            line-height: 1.2
+        }}
+
+        img,
+        figure {{
+            width: 100% !important;
+            height: auto !important;
+            margin: 0 !important;
+        }}
+
+        nav ul {{
+            max-width: 650px;
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }}
+
+        nav li {{
+            float: left;
+        }}
+
+        nav li a {{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }}
+
+        /* Change the link color to #111 (black) on hover */
+        nav li a:hover {{
+            background-color: #111;
+        }}
+    </style>
+</head>
+
+<body>
+    <nav><ul><li><a href="/">HOME</a><li></ul></nav>
+    <div class="main">
+        <h1>{title}</h1>
+        {content}
+    </div>
+</body>
+
+</html>
