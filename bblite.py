@@ -51,6 +51,7 @@ class BbHandler(BaseHTTPRequestHandler):
                 self.wfile.write('404 Not Found!')
 
 if __name__ == '__main__':
-    server_address = ('', 8000)
+    port = int(os.environ.get('PORT', 8000))
+    server_address = ('', port)
     httpd = HTTPServer(server_address, BbHandler)
     httpd.serve_forever()
